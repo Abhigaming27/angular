@@ -9,4 +9,5 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation } from '@angular/
 })
 export class AppComponent {
   title = 'my-app';
+  nav = ['Home', 'About us', 'Services', 'Blogs', 'Contact us']
 }
