@@ -9,6 +9,9 @@ import { ParentComponent } from './app-parent.component';
 import { HeroChildComponent } from './hero-child.component';
 import { HeroParentComponent } from './hero-parent.component';
 import { NavComponent } from './nav.component'
+import { ContentChildComponent } from './content-child-component';
+import { ContentParentComponent } from './content-parent-component';
+
  
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { NavComponent } from './nav.component'
     ParentComponent,
     HeroChildComponent,
     HeroParentComponent,
-    NavComponent
+    NavComponent,
+    ContentChildComponent,
+    ContentParentComponent
   ],
   imports: [
     BrowserModule
