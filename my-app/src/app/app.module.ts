@@ -11,6 +11,11 @@ import { HeroParentComponent } from './hero-parent.component';
 import { NavComponent } from './nav.component'
 import { ContentChildComponent } from './content-child-component';
 import { ContentParentComponent } from './content-parent-component';
+import { HeroJobAdComponent } from './hero-job-ad.component';
+import { AdBannerComponent } from './ad-banner.component';
+import { HeroProfileComponent } from './hero-profile.component';
+import { AdDirective } from './ad.directive';
+import { AdService } from './ad.service';
 
  
 @NgModule({
@@ -24,12 +29,17 @@ import { ContentParentComponent } from './content-parent-component';
     HeroParentComponent,
     NavComponent,
     ContentChildComponent,
-    ContentParentComponent
+    ContentParentComponent,
+    AppComponent,
+    HeroJobAdComponent,
+    AdBannerComponent,
+    HeroProfileComponent,
+    AdDirective
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [AdService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

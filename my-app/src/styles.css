@@ -6,6 +6,16 @@ html, body {
     box-sizing: border-box;
 }
 
+h1 {
+    color: #264d73;
+    font-size: 2.5rem;
+}
+
+h2, h3 {
+    color: #444;
+    font-weight: lighter;
+}
+
 h3 {
-    color: blue;
+    font-size: 1.3rem;
 }

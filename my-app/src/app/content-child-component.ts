@@ -8,7 +8,7 @@ import { Component } from "@angular/core";
             <ng-content>
             </ng-content>
         </section>
-    `
+    `  
 })
 
 export class ContentChildComponent {
