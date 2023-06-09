@@ -1,4 +1,55 @@
 <section class="wrapper">
+    <h3>Injectable</h3>
+    <p>{{hello}}</p>
+</section>
+<section class="wrapper" *ngIf="currentCustomer">
+    <h3>Hello, {{currentCustomer}}</h3>
+</section>
+<section class="wrapper">
+    <h3 appHighlight>Highlight me</h3>
+</section>
+<section class="wrapper">
+    <input [(ngModel)]="firstName">
+    <p>Value: {{ firstName }}</p>
+</section>
+
+<section class="wrapper">
+    <h1 [ngClass]="isSpecial ? 'special' : ''">Hello there!</h1>
+</section>
+<section class="wrapper">
+    <p [ngStyle]="currentStyles">This is ngStyle. This p is initially italic, normal weight, and extra large (24px) </p>
+</section>
+<section class="wrapper">
+    <input 
+        #phone
+        type="text" 
+        placeholder="Please enter your Phone number" />
+    <button type="button" (click)="callPhone(phone.value)" class="gap">Click here</button>
+    <h2>{{phoneNumber}}</h2>
+</section>
+<today class="wrapper"></today>
+<section class="wrapper">
+    <input 
+        type="text" 
+        placeholder="Please enter your name" 
+        class="name-input"
+        (keyup)="onKey($event)" />
+    <h2>{{values}}</h2>
+</section>
+
+<section class="wrapper">
+    <h1 [style]="h1">Hello, {{name}}</h1>
+    
+    <button (click)="displayName('Suresh Padhye')">Click here</button>
+</section>
+
+<section class="wrapper">
+    <ul>
+        <li *ngFor="let menu of nav">{{menu}}</li>
+    </ul>
+</section>
+
+<section class="wrapper">
     <app-ad-banner [ads]="ads"></app-ad-banner>
 </section>
 <hello-world class="wrapper"></hello-world>

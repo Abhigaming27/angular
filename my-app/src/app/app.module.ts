@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -16,7 +17,9 @@ import { AdBannerComponent } from './ad-banner.component';
 import { HeroProfileComponent } from './hero-profile.component';
 import { AdDirective } from './ad.directive';
 import { AdService } from './ad.service';
-
+import { TodayComponent } from './today.component';
+import { ExponentialStrength } from './exponential.pipe';
+import { HighlightDirective } from './highlight.directive';
  
 @NgModule({
   declarations: [
@@ -34,10 +37,14 @@ import { AdService } from './ad.service';
     HeroJobAdComponent,
     AdBannerComponent,
     HeroProfileComponent,
-    AdDirective
+    AdDirective,
+    TodayComponent,
+    ExponentialStrength,
+    HighlightDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [AdService],
   bootstrap: [AppComponent]
